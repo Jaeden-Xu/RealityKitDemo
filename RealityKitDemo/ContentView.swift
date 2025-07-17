@@ -28,6 +28,17 @@ struct ContentView : View {
                         .padding(.vertical, 8)
                     }
                     
+                    NavigationLink(destination: FileModel()) {
+                        HStack {
+                            Image(systemName: "person.fill")
+                                .foregroundColor(.orange)
+                                .font(.title2)
+                            Text("文件模型")
+                                .font(.headline)
+                        }
+                        .padding(.vertical, 8)
+                    }
+                    
                     // 这里可以添加更多的模型选项
                     NavigationLink(destination: Text("高级模型内容将在这里显示")) {
                         HStack {
